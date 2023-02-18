@@ -1,12 +1,13 @@
 .exgauster-container{
-    height: 300px;
+    height:fit-content;
+    max-height: 80vh;
+    overflow-y:auto;
 }
 .exgauster-head{
     position: relative;
-    padding: 10px;
+    padding: 5px;
     padding-right:40px;
-    height: 30px;
-    width: 190px;
+    width: 260px;
     background-color: rgb(95, 95, 95);
     color:white;
 }
@@ -15,18 +16,70 @@
     height: 25px;
     width: 25px;
     top: 10px;
-    right: 10px;
+    right: 15px;
 }
 .ex-blink{
     width: 10px;
     height: 10px;
-    border-radius: 5px;
-    display: inline-block;
-    background-color: gray;
-    margin-right: 10px;
+    border-radius: 15px;
+    background-color: lightgray;
 }
 .exgauster-wrapper{
     border-radius: 5px;
     border: 1px solid rgb(95, 95, 95);;
+    border: 1px solid rgb(116, 116, 116);;
     overflow: hidden;
+}
+.exgauster-image{
+    width: 95%;
+}
+.ex-rotor-data{
+    position: relative;
+    text-align: left;
+    padding: 15px;
+}
+.ex-rotor-date{
+    display: inline-block;
+    margin-left: 5px;
+}
+.ex-rotor-change{
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+}
+.ex-rotor-data hr{
+    border-top: 1px solid lightgrey;
+}
+.rotor-exp-time{
+    font-weight: 500;
+    font-size: larger;
+    display: inline-block;
+    width: 50px;
+}
+.ex-rotor-data h5{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.rotor-forecast{
+    position: relative;
+    top: -10px;
+    display: inline-block;
+    margin-top: -30px;
+    font-weight: 500;
+}
+.rotor-forecast-label{
+    font-weight: 200;
+    top:-20px;
+    color: gray;
+    position: absolute;
+}
+.menu-arrow{
+    text-align: left;
+    padding: 5px;
+    font-weight: 500;
+}
+.menu-arrow div{
+    text-align: left;
+    display: inline;
+    padding: 5px;
 }

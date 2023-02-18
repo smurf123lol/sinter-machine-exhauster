@@ -22,6 +22,28 @@ function StartExApp(){
         res.json(rows);
     });
   })
+  app.get("/getexdata", (req, res) => {
+    let exID = req.exID;
+    const sql1 = `SELECT 
+    *
+    FROM exgausters
+    WHERE id=`+exID
+
+    let result ={}
+    
+    db.all(sql1,(err,rows)=>{
+      result.exgauster = rows[0];
+      if(result.bearings)res.json(result);
+    });
+    const sql2 = `SELECT 
+    *
+    FROM bearings
+    WHERE exgauster_id=`+exID
+    db.all(sql2,(err,rows)=>{
+      result.bearings = rows;
+      if(result.exgauster)res.json(result);
+    });
+  })
 
   app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);

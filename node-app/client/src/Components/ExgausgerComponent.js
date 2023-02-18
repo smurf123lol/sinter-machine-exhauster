@@ -16,7 +16,7 @@ class ExgausterComponent extends React.Component{
         let mainContainer = document.getElementsByClassName('ex-schema')[0];
         console.log(mainContainer)
         mainContainer.innerHTML = '';
-        createRoot(mainContainer).render(<ExgausterSchemaPage></ExgausterSchemaPage>);
+        createRoot(mainContainer).render(<ExgausterSchemaPage exid={this.props.data.ex_id}></ExgausterSchemaPage>);
     }
     UpdateOpenState(){
         this.setState({

@@ -23,7 +23,7 @@ function StartExApp(){
     });
   })
   app.get("/getexdata", (req, res) => {
-    let exID = req.exID;
+    let exID = req.query.id;
     const sql1 = `SELECT 
     *
     FROM exgausters

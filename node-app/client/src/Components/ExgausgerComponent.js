@@ -1,7 +1,9 @@
 import React from "react";
 import  "../css/exgauster.css"
 import svg_exg from '../img/exgauster.svg'
+import {createRoot} from "react-dom/client";
 
+import ExgausterSchemaPage from "../Pages/ExgausterSchema";
 class ExgausterComponent extends React.Component{
     constructor(props){
         super(props);
@@ -11,7 +13,10 @@ class ExgausterComponent extends React.Component{
         }
     }
     OpenExgausterPage(){
-
+        let mainContainer = document.getElementsByClassName('ex-schema')[0];
+        console.log(mainContainer)
+        mainContainer.innerHTML = '';
+        createRoot(mainContainer).render(<ExgausterSchemaPage></ExgausterSchemaPage>);
     }
     UpdateOpenState(){
         this.setState({

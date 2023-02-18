@@ -1,0 +1,18 @@
+.schema-wrapper{
+
+}
+.schema-svg{
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 2;
+    left: 0;
+}
+.schema-value{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}

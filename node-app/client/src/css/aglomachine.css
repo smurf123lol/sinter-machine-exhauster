@@ -10,7 +10,10 @@
     align-items: start;
 }
 .aglo-head{
+    color:rgb(143, 143, 143);
     padding: 5px;
+    padding-left: 15px;
     margin:5px;
-    background-color: lightgrey;
+    background-color: rgb(224, 224, 224);
+    text-align: start;
 }
